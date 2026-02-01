@@ -49,7 +49,7 @@ export const buttonVariants = cva(
       size: "md",
       fullWidth: false,
     },
-  }
+  },
 );
 
 export type ButtonVariantProps = VariantProps<typeof buttonVariants>;
