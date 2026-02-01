@@ -6,6 +6,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "homepage": "https://denyshv1.github.io/denvik-ui-kit/",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
