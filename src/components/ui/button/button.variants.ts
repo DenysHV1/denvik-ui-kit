@@ -7,11 +7,13 @@ export const buttonVariants = cva(
     "[&>svg]:shrink-0",
     "rounded-xl font-semibold leading-none",
     "shadow-sm",
+    "tracking-[-0.01em] antialiased",
     "transition-[color,background-color,border-color,box-shadow,transform,opacity] duration-200 ease-out",
     "will-change-transform",
+    "hover:shadow-md active:shadow-sm",
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
-    "ring-offset-white dark:ring-offset-zinc-950",
-    "active:translate-y-[1px]",
+    "border border-transparent",
+    "ring-1 ring-inset ring-white/10",
     "cursor-pointer",
     "disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
     "touch-manipulation",
@@ -20,79 +22,56 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         primary: [
-          "bg-zinc-900 text-white",
-          "hover:bg-zinc-800",
-          "active:bg-zinc-900",
-          "hover:shadow-md active:shadow-sm",
-          "focus-visible:ring-zinc-900",
-
-          "dark:bg-zinc-50 dark:text-zinc-900",
-          "dark:hover:bg-zinc-200",
-          "dark:focus-visible:ring-zinc-50",
+          "bg-[var(--color-accent)] text-[var(--color-on-accent)]",
+          "hover:bg-[var(--color-accent-hover)]",
+          "active:bg-[var(--color-accent-active)]",
+          "focus-visible:ring-[var(--color-ring)]",
+          "focus-visible:ring-offset-[var(--color-accent)]",
         ].join(" "),
 
         secondary: [
-          "bg-zinc-100 text-zinc-900",
-          "hover:bg-zinc-200",
-          "active:bg-zinc-200",
-          "hover:shadow-md active:shadow-sm",
-          "focus-visible:ring-zinc-400",
-
-          "dark:bg-zinc-800 dark:text-zinc-50",
-          "dark:hover:bg-zinc-700",
-          "dark:focus-visible:ring-zinc-600",
+          "bg-[var(--color-neutral)] text-[var(--color-on-neutral)]",
+          "hover:bg-[var(--color-neutral-hover)]",
+          "active:bg-[var(--color-neutral-active)]",
+          "focus-visible:ring-[var(--color-ring)]",
+          "focus-visible:ring-offset-[var(--color-neutral)]",
         ].join(" "),
 
         outline: [
-          "bg-white text-zinc-900",
-          "border border-zinc-200",
-          "hover:bg-zinc-50",
-          "active:bg-zinc-100",
-          "hover:shadow-md active:shadow-sm",
-          "focus-visible:ring-zinc-400",
-
-          "dark:bg-zinc-950 dark:text-zinc-50",
-          "dark:border-zinc-700",
-          "dark:hover:bg-zinc-900",
-          "dark:focus-visible:ring-zinc-600",
+          "bg-[var(--color-surface)] text-[var(--color-text)]",
+          "border-[var(--color-border)]",
+          "ring-0",
+          "hover:bg-[var(--color-bg-subtle)]",
+          "active:bg-[var(--color-surface-3)]",
+          "focus-visible:ring-[var(--color-ring)]",
+          "focus-visible:ring-offset-[var(--color-bg)]",
         ].join(" "),
 
         ghost: [
-          "bg-transparent text-zinc-900",
-          "hover:bg-zinc-100",
-          "active:bg-zinc-200",
-          "hover:shadow-sm",
-          "focus-visible:ring-zinc-400",
-
-          "dark:text-zinc-50",
-          "dark:hover:bg-zinc-800",
-          "dark:active:bg-zinc-700",
-          "dark:focus-visible:ring-zinc-600",
+          "bg-transparent text-[var(--color-text)]",
+          "border-transparent ring-0",
+          "hover:bg-[var(--color-neutral)]",
+          "active:bg-[var(--color-neutral-hover)]",
+          "focus-visible:ring-[var(--color-ring)]",
+          "focus-visible:ring-offset-[var(--color-bg)]",
         ].join(" "),
 
         destructive: [
-          "bg-red-600 text-white",
-          "hover:bg-red-700",
-          "active:bg-red-700",
-          "hover:shadow-md active:shadow-sm",
-          "focus-visible:ring-red-600",
-
-          "dark:bg-red-500",
-          "dark:hover:bg-red-600",
-          "dark:focus-visible:ring-red-500",
+          "bg-[var(--color-danger)] text-[var(--color-text-invert)]",
+          "hover:bg-[var(--red-7)]",
+          "active:bg-[var(--red-7)]",
+          "focus-visible:ring-[var(--color-danger)]",
+          "focus-visible:ring-offset-[var(--color-danger)]",
         ].join(" "),
 
         link: [
-          "bg-transparent text-zinc-900",
+          "bg-transparent text-[var(--color-link)]",
+          "border-transparent ring-0 shadow-none",
           "underline underline-offset-4",
-          "decoration-zinc-400 hover:decoration-zinc-500",
-          "hover:text-zinc-700 active:text-zinc-800",
-          "shadow-none",
-          "focus-visible:ring-zinc-400",
-
-          "dark:text-zinc-50",
-          "dark:decoration-zinc-500 dark:hover:decoration-zinc-300",
-          "dark:hover:text-zinc-200 dark:active:text-zinc-100",
+          "decoration-[var(--color-text-soft)] hover:decoration-[var(--color-text-muted)]",
+          "hover:text-[var(--color-link-hover)] active:text-[var(--color-link-hover)]",
+          "focus-visible:ring-[var(--color-ring)]",
+          "focus-visible:ring-offset-[var(--color-bg)]",
         ].join(" "),
       },
 
@@ -120,7 +99,7 @@ export const buttonVariants = cva(
       fullWidth: false,
       loading: false,
     },
-  },
+  }
 );
 
 export type ButtonVariantProps = VariantProps<typeof buttonVariants>;
