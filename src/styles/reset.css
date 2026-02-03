@@ -59,8 +59,25 @@ p {
   margin: 0;
 }
 
+input:focus {
+  outline: none;
+}
+
 
 :focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
+}
+
+
+.no-bg-no-shadow {
+  background-color: transparent;
+  box-shadow: none;
+}
+.no-bg-no-shadow:hover,
+.no-bg-no-shadow:focus,
+.no-bg-no-shadow:focus-visible,
+.no-bg-no-shadow:active {
+  background-color: transparent;
+  box-shadow: none;
 }
