@@ -1,21 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-const Dummy = () => <div />;
+const Dummy = () => null;
 
 const meta: Meta<typeof Dummy> = {
   title: "Introduction",
   component: Dummy,
-  tags: ["autodocs"],
   parameters: {
-    viewMode: "docs",
-    previewTabs: { canvas: { hidden: true } },
     controls: { disable: true },
     actions: { disable: true },
     docs: {
       page: () => (
         <div style={{ maxWidth: 820, lineHeight: 1.6 }}>
           <h1>denvik-ui-kit</h1>
-
           <p>
             <strong>denvik-ui-kit</strong> — это UI-библиотека компонентов на React и TypeScript,
             предназначенная для использования в разных проектах: от небольших интерфейсов
@@ -95,5 +91,9 @@ const meta: Meta<typeof Dummy> = {
 export default meta;
 
 export const Docs: StoryObj<typeof Dummy> = {
-  render: () => <div />,
+  parameters: {
+    viewMode: "docs",
+    previewTabs: { canvas: { hidden: true } },
+  },
+  render: () => <div/>,
 };
