@@ -17,8 +17,3 @@ UI-библиотека компонентов на **React + TypeScript**, пр
 ## Установка
 
 npm i github:DenysHV1/denvik-ui-kit#v1.0.0
-
-## UI
-
-- import { Button } from "denvik-ui-kit";
-- import { Spinner } from "denvik-ui-kit";
