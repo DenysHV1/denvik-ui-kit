@@ -3,8 +3,10 @@ import type { Preview } from "@storybook/react";
 
 const preview: Preview = {
   parameters: {
-    controls: { expanded: true }, measure: { disable: true },
+    controls: { expanded: true },
+    measure: { disable: true },
     outline: { disable: true },
+    initialPath: "/?path=/docs/introduction--docs",
   },
   tags: ["autodocs"],
   globalTypes: {
@@ -21,7 +23,6 @@ const preview: Preview = {
       },
     },
   },
-
   decorators: [
     (Story, ctx) => {
       const theme = (ctx.globals.theme ?? "light") as "light" | "dark";

@@ -7,7 +7,7 @@ import { Input } from "../input";
 import { FiInfo, FiMail, FiSearch } from "react-icons/fi";
 
 const meta: StoryMeta = {
-	title: "UI/Input",
+	title: "components/Input",
 	component: Input,
 	decorators,
 	parameters: {

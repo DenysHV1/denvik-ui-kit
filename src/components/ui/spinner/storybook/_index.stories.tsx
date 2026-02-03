@@ -25,7 +25,7 @@ const meta: Meta<typeof Spinner> = {
   args: {
     size: "sm",
     speed: "normal",
-    tone: "solid",
+    tone: "neutral",
   },
 };
 
@@ -37,7 +37,7 @@ export const Sizes: SpinnerStory = {
   parameters: { controls: { disable: true } },
   render: () => (
     <>
-      <Spinner size="xs" /> <Spinner size="sm" /> <Spinner size="md" />
+      <Spinner size="sm" /> <Spinner size="sm" /> <Spinner size="md" />
       <Spinner size="lg" />
     </>
   ),
@@ -57,7 +57,7 @@ export const Tones: SpinnerStory = {
   parameters: { controls: { disable: true } },
   render: () => (
     <>
-      <Spinner tone="solid" /> <Spinner tone="soft" />
+      <Spinner tone="neutral" /> <Spinner tone="muted" />
     </>
   ),
 };

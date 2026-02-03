@@ -6,7 +6,7 @@ export const docs = {
 
 ### Быстрый старт
 \`\`\`tsx
-import { Input } from "@/components/ui/input";
+import { Input } from "denvik-ui-kit";
 
 <Input label="Email" type="email" placeholder="name@example.com" />
 \`\`\`
