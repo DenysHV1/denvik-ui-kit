@@ -14,5 +14,5 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src", ".storybook", "vite.config.ts", ".storybook/_index.stories.tsx"]
+  "include": ["src", ".storybook", "vite.config.ts", "src/stories/_index.stories.tsx"]
 }
