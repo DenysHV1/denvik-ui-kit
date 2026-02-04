@@ -6,7 +6,7 @@ import { decorators } from "./decorators";
 import type { SpinnerStory } from "./types";
 
 const meta: Meta<typeof Spinner> = {
-  title: "Components/Spinner",
+  title: "UI/Spinner",
   component: Spinner,
   decorators: [...decorators],
   parameters: {

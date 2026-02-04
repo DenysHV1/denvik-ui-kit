@@ -6,9 +6,7 @@ const preview: Preview = {
     controls: { expanded: true },
     measure: { disable: true },
     outline: { disable: true },
-     options: {
     initialPath: "/?path=/docs/introduction--docs",
-  },
   },
   tags: ["autodocs"],
   globalTypes: {

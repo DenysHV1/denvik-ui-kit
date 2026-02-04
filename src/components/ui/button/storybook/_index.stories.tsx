@@ -6,7 +6,7 @@ import { decorators } from "./decorators";
 import type { ButtonStory } from "./types";
 
 const meta: Meta<typeof Button> = {
-  title: "Components/Button",
+  title: "UI/Button",
   component: Button,
   decorators: [...decorators],
   parameters: {
