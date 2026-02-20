@@ -16,4 +16,4 @@ UI-библиотека компонентов на **React + TypeScript**, пр
 
 ## Установка
 
-npm i github:DenysHV1/denvik-ui-kit#v1.0.0
+npm i github:DenysHV1/denvik-ui-kit#v1.0.1

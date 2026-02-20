@@ -56,7 +56,7 @@ const meta: Meta<typeof Dummy> = {
             На данный момент библиотека устанавливается напрямую из GitHub:
           </p>
           <pre>
-            <code>npm i github:DenysHV1/denvik-ui-kit#v1.0.0</code>
+            <code>npm i github:DenysHV1/denvik-ui-kit#v1.0.1</code>
           </pre>
 
           <h2>Как использовать</h2>
